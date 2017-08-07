@@ -49,7 +49,7 @@ a{
 	width: 100%;
     overflow: auto;
     position: relative;
-    height: 0.4rem;
+    height: 0.39rem;
 }
 .list-nav {
 	width: 154%;
@@ -57,9 +57,11 @@ a{
     top: 0;
     height: 0.4rem;
     background: #fff;
-    overflow-x: hidden;
+    overflow-x: visible;
+    overflow-y: hidden;
     transition: all 0.5s;
 }
+
 .list-nav li{
 	float: left;
 	height: 0.4rem;

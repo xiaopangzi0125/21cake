@@ -46,7 +46,7 @@ export default {
 	margin-bottom: 0.48rem;
     position: relative;
     top: 0.4rem;
-    padding-right: 0.2rem;
+    /*padding-right: 0.2rem;*/
     background: #FFFFFF;
 }	
 

@@ -14,7 +14,7 @@
 						<div class="cart-pro-title">
 							<h2>{{pro.ename}}<span>{{pro.cname}}</span></h2>
 							<p>规格：{{pro.spec}}</p>
-							<p class="cart-price">￥{{pro.price}}</p>
+							<p class="cart-price">￥{{pro.price*pro.count}}</p>
 						</div>
 					</div>
 					<div class="cart-pro-number">
@@ -115,8 +115,9 @@ export default {
 			var that = this;
 			that.total = 0;
 			for(var i = 0;i < that.cartlist.length;i++){
-				that.total += that.cartlist[i].price * that.cartlist[i].count;
+				that.total += that.cartlist[i].price*that.cartlist[i].count;
 			}
+			console.log(this.total)
 		}
 	},
 	components:{
